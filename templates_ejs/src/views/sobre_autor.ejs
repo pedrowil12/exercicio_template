@@ -1,0 +1,31 @@
+<%# A linha abaixo carrega no template o conteúdo total do arquivo header.ejs%>
+<%-include('base_header') -%>
+<div class="row-autor">
+   <% for(var i=0; i< lista_pessoas.length; ++i) { %>   
+    <div class="nomeAutor">
+        <h2><%=lista_pessoas[i].nome %></h2><br/>
+    </div>
+    <br>
+    <div class="detalhesAutor">
+        <span class="descritor">Idade: <%=lista_pessoas[i].idade %></span><br/>
+        <span class="descritor">Conhecimentos:</span> <%=lista_pessoas[i].conhecimentos %> <br/>
+        <span class="descritor">Formação:</span> <%=lista_pessoas[i].formacao %>           
+    </div>
+    <div class="sobreAutor">
+        <h1 class="sobreAutorTitle">Sobre o autor</h1>
+        <p class="texto">
+            Depende realmente de você, o quê, exatamente, representam os elementos envolvidos, desde que a hierarquia 
+            faça sentido. Você só precisa ter em mente algumas das melhores práticas ao criar tais estruturas:
+            Preferencialmente, você deve usar apenas umpor página — esse é o título do nível superior e todos os outros
+            ficam abaixo dele, na hierarquia. Certifique-se de usar os títulos na ordem correta na hierarquia.
+            Não use para representar subtítulos, seguido de para representar sub-subtítulos - isso não faz sentido e levará
+            a resultados estranhos. Dos seis níveis de cabeçalho disponíveis, você deve usar no máximo três por página,
+            a menos que considere necessário usar mais. Documentos com vários níveis (ou seja, uma hierarquia profunda de 
+            cabeçalho) tornam-se difíceis de navegar. Nessas ocasiões, é aconselhável espalhar o conteúdo por várias páginas,
+            se possível.</p>
+    </div>
+            
+       <% } %>
+</div>
+<%# A linha abaixo carrega no template o conteúdo total do arquivo footer.ejs %>
+<%- include('base_footer') -%>
