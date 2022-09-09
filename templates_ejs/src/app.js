@@ -41,7 +41,7 @@ function listProjectHandler(req, res){
 
 function sobreAutorHandler(req, res){
     let pessoa_1 = new Pessoa("Pedro Willian de Paula Ferreira", "19.", "NodeJS, Java, C#, React, HTML, CSS, Bootstrap, Jquery.", 
-    "Cursando 5º semestre de Análise e Desenvolvimento de Sistemas na Fatec de SJC.");
+    "Cursando 5º semestre de Análise e Desenvolvimento de Sistemas na Fatec de SJC.", "https://github.com/pedrowil12", "https://www.linkedin.com/in/pedro-ferreira-6a8417190/");
     let pessoas = [];
     pessoas.push(pessoa_1);
     res.render('sobre_autor.ejs',{lista_pessoas: pessoas});

@@ -1,9 +1,11 @@
 class Pessoa{
-    constructor(nome, idade, conhecimentos, formacao){
+    constructor(nome, idade, conhecimentos, formacao, github, linkedin){
         this.nome = nome;
         this.idade = idade;
         this.conhecimentos = conhecimentos;
         this.formacao = formacao;
+        this.github = github;
+        this.linkedin = linkedin
     }
 }
 
